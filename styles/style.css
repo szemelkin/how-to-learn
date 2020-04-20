@@ -1,14 +1,94 @@
+.header__logo_place_header{
+  block: inline-block;
+  position: absolute;
+  top:30px;
+  left: 64px;
+  width: 182px;
+  height: 32px;
+}
+
+.header__title{
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  top:100px;
+  left: 64px;
+  width: 730px;
+  height: 32px;
+}
+
+
+.header__subtitle{
+  block: inline-block;
+  position: absolute;
+  top:300px;
+  left: 64px;
+  width: 182px;
+  height: 32px;
+}
+
+
+.header__main-illustration{
+  block: inline-block;
+  position: absolute;
+  top:500px;
+  left: 64px;
+  width: 182px;
+  height: 32px;
+}
+
+.header__square-pic{
+  block: inline-block;
+  position: absolute;
+  top:600px;
+  left: 64px;
+  width: 182px;
+  height: 32px;
+}
+
+.footer{
+  block: inline-block;
+  position: absolute;
+  top:1500px;
+  left: 64px;
+  width: 182px;
+  height: 32px;
+}
+
+
+
+/* Все кнопки будут 100 на 30 пикселей, со скруглёнными углами и надписью заглавными буквами */
+.project-button {
+  width: 200px;
+  height: 260px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+/* Кнопка отправки формы будет синего цвета стали с белой надписью */
+.project-button_type_submit {
+  background-color: green;
+  color: black;
+}
+
 p {
-  font-family: 'Inter', sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid greenyellow;
 }
+
 div{
+
+  box-sizing: border-box; /* задали box-sizing */
+  width: 300px;
+  height: 200px;
+  border: 2px solid red; /* граница не влияет на размер */
+  padding: 20px; /* отступ не растягивает блок */
+
+
   background-color:mediumaquamarine;
-  width: 500px;
-  height: 500px;
-
 }
-
-
 
 .page {
   min-width: 1100px;
@@ -21,33 +101,19 @@ div{
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
 .header {
   /*height: 100vh;
   min-height: 600px;
   max-height: 756px;*/
   height: 95px;
   display: flex;
-  border: 10px solid red;
+  border: 2px solid red;
   /*border: 1px solid red;*/
   /* выше установили ограничения для секции */
 }
 
-
 .header-link{
   margin: auto;
-}
-
-
-
-
-
-.main-illustration {
-  background-position: center;
-  background-size: cover;
-  /*height: 568px;
-  width: 568px;*/
-  background-image: url(../images/header-image.png);
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -64,13 +130,5 @@ div{
   margin-top: 80px;
 }
 
-
-p {
-  font-family: 'Inter', sans-serif;
-}
-div{
-  background-color:mediumaquamarine;
-  width: 500px;
-  height: 500px;
 
 }
