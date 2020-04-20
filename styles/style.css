@@ -43,6 +43,20 @@
   position: relative;
 }
 
+.digits{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+
+  border: 2px solid green;
+  position: relative;
+}
+
+
+
 .footer{
   display: flex;
   position: relative;
@@ -192,6 +206,68 @@
   font-weight: normal;
 }
 
+/*Элементы экрана с цифрами*/
+
+.digits__section-title{
+  width: 60vw;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  border: 2px solid yellow;
+  text-align: center;
+
+  line-hight: 69px;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.digits__section-subtitle{
+
+  border: 2px solid yellow;
+  width: 60vw;
+  line-hight: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.digits__table{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  max-lines: 4;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  width: 1100px;
+  margin-bottom: 100px;
+  border: 2px solid yellow;
+  text-align: center;
+}
+
+.digits__table_cell{
+  width: 250px;
+  margin-top: 60px;
+
+}
+
+.digits__table_heading{
+  line-hight: 1.15;
+  font-size: 24px;
+  font-weight: bolder;
+
+  text-align: left;
+}
+
+.digits__table_text{
+  line-hight: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 20px;
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
