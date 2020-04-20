@@ -1,3 +1,15 @@
+p {
+  font-family: 'Inter', sans-serif;
+}
+div{
+  background-color:mediumaquamarine;
+  width: 500px;
+  height: 500px;
+
+}
+
+
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -9,11 +21,33 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
 .header {
-  height: 100vh;
+  /*height: 100vh;
   min-height: 600px;
-  max-height: 756px;
+  max-height: 756px;*/
+  height: 95px;
+  display: flex;
+  border: 10px solid red;
+  /*border: 1px solid red;*/
   /* выше установили ограничения для секции */
+}
+
+
+.header-link{
+  margin: auto;
+}
+
+
+
+
+
+.main-illustration {
+  background-position: center;
+  background-size: cover;
+  /*height: 568px;
+  width: 568px;*/
+  background-image: url(../images/header-image.png);
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -28,4 +62,15 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+div{
+  background-color:mediumaquamarine;
+  width: 500px;
+  height: 500px;
+
 }
