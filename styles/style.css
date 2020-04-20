@@ -1,6 +1,7 @@
 .page {
   display: flex;
   position: relative;
+  flex-direction: column;
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -16,7 +17,9 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-
+  flex-direction: row;
+  position: relative;
+  /*flex-direction: row; */
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
@@ -29,8 +32,28 @@
   /* выше установили ограничения для секции */
 }
 
-.header__logo_place_header{
+.content{
   display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 100vw;
+
+  border: 2px solid green;
+  position: relative;
+}
+
+.footer{
+  display: flex;
+  position: relative;
+  top:1500px;
+  left: 64px;
+  width: 182px;
+  height: 32px;
+}
+
+
+.header__logo_place_header{
   position: absolute;
   top:30px;
   left: 64px;
@@ -39,8 +62,10 @@
   border: 2px solid red; /* граница не влияет на размер */
 }
 
+
+
 .header__title{
-  display: flex;
+
 
   position: absolute;
   left: 64px;
@@ -56,34 +81,38 @@
 
 
 .header__subtitle{
-  block: inline-block;
+
   position: absolute;
   bottom:30px;
   left: 64px;
   width: 388px;
-  margin: auto;
+  /*margin: auto;*/
   /*height: 32px;*/
   width: 388px
   line-hight: 25px;
   font-size: 18px;
+  border: 2px solid red;
 }
 
+.header-link{
+  margin: auto;
+}
 
 .header__main-illustration{
-  block: inline-block;
+
   position: absolute;
+  justify-content: flex-end;
+  align-items: center;
   right: 0px;
   bottom: 0px;
   z-index: 1;
   width: 765px;
   height: 608px;
 
-  margin-bottom: 0px;
-  margin-right: 0px;
 }
 
 .header__square-pic{
-  block: inline-block;
+  block: flex;
   position: absolute;
   background-color: #2f80ed;
   top: 64px;
@@ -97,17 +126,94 @@
 
 }
 
+
+.description{
+
+  border: 2px solid red;
+  width: 80vw;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+
 }
 
-.footer{
-  block: inline-block;
+.two-columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+
+
+
+  border: 2px solid red;
+
+
+}
+
+.two-columns__brief{
+
+
+
+  width: 175px;
+  border: 2px solid red;
+  line-hight: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+
+
+}
+
+.two-columns__main-text{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-width: 784px;
+  border: 2px solid red;
+}
+
+.two-columns__paragraph{
+
+
+  border: 2px solid red;
+  line-hight: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent{
+
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid red;
+  line-hight: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+
+.header__logo_place_footer{
+  display: flex;
   position: absolute;
-  top:1500px;
+  top:30px;
   left: 64px;
   width: 182px;
   height: 32px;
+  border: 2px solid red; /* граница не влияет на размер */
 }
 
+
+/* Булщит */
 
 
 /* Все кнопки будут 100 на 30 пикселей, со скруглёнными углами и надписью заглавными буквами */
@@ -122,7 +228,6 @@
   background-color: green;
   color: black;
 }
-
 
 /*div{ */
 
@@ -140,28 +245,5 @@
 
 
 
-.header-link{
-  margin: auto;
-}
-
-
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
-.header__logo_place_footer{
-  display: flex;
-  position: absolute;
-  top:30px;
-  left: 64px;
-  width: 182px;
-  height: 32px;
-  border: 2px solid red; /* граница не влияет на размер */
-}
 
 }
