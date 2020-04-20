@@ -55,6 +55,13 @@
   position: relative;
 }
 
+.feinman{
+  height: 790px;
+  width: 100vw;
+  position: relative;
+  border: 2px solid blue;
+}
+
 
 
 .footer{
@@ -268,6 +275,53 @@
   text-align: left;
   margin-top: 20px;
 }
+
+
+/*Элементы Фейнмана*/
+
+.feinman__title{
+  margin-top: 100px;
+  width: 648px;
+
+  line-hight: 1.15;
+  font-size: 120px;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feinman__subtitle{
+  margin-top: 70px;
+
+
+  line-hight: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+
+}
+
+.feinman__link{
+  position: absolute;
+  top: 50%;
+  right: 48px;
+
+  line-hight: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+.header__main-illustration{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
