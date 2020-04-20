@@ -18,14 +18,14 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: row;
   position: relative;
-  /*flex-direction: row; */
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
   border: 2px solid red;
   z-index: 0;
+
+  flex-direction: row;
   /*height: 95px;*/
   /*display: flex;*/
   /*border: 2px solid red;*/
@@ -86,11 +86,12 @@
 
 .footer{
   display: flex;
+  flex-direction: row;
   position: relative;
-  top:1500px;
-  left: 64px;
-  width: 182px;
-  height: 32px;
+  width: 100vw;
+  min-height: 350px;
+  border: 2px solid red;
+  background-color:#1f1f1f;
 }
 
 /* Элементы и модификаторы по порядку*/
@@ -138,14 +139,16 @@
 }
 
 .header__main-illustration{
+
   position: absolute;
-  justify-content: flex-end;
-  align-items: center;
-  right: 0px;
-  bottom: 0px;
+
+  border: 2px solid red;
+
   z-index: 1;
   width: 765px;
   height: 608px;
+  bottom: 0px;
+  right: 0px;
 }
 
 .header__square-pic{
@@ -306,11 +309,6 @@
 }
 
 
-.header__main-illustration{
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
 
 /*Элементы Кауфмана*/
 
@@ -373,6 +371,102 @@
   border: 2px solid red; /* граница не влияет на размер */
 }
 
+/*Footer*/
+
+.columns{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 2px solid red;
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  width: 90%;
+  align-content: space-between;
+  justify-content: space-between;
+  left: 64px;
+
+}
+
+.columns__copyright{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  position: relative;
+  flex-basis: 711px;
+
+  line-hight: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__logo_place_footer{
+  width: 183px;
+  height: 35px;
+  left: 64px;
+}
+
+.author{
+  position: absolute;
+  bottom: 10px;
+  color: white;
+
+}
+
+.columns__info{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  color: white;
+
+}
+
+.column-heading{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  line-hight: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.column-links{
+  line-height: 10px;
+  margin-bottom: 16px;
+  line-hight: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.columns__social{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+}
+
+
+
+.content__social{
+  display: inline-block;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  color: white;
+}
+
+
+.social-icon{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.social-name{
+  line-height: 10px;
+}
 /* Булщит */
 /* Все кнопки будут 100 на 30 пикселей, со скруглёнными углами и надписью заглавными буквами */
 .project-button {
