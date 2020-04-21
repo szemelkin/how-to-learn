@@ -1,22 +1,33 @@
 /* Основные блоки */
+
+body{
+  margin: 0 auto;
+  width: 100%;
+
+}
+
 .page {
   display: flex;
   position: relative;
   flex-direction: column;
+  width: 100%;
+
+
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
+  /*max-width: 1400px;*/
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
 }
 
 
 .header {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   position: relative;
   min-height: 600px;
@@ -24,20 +35,23 @@
   background-color: #f2f2f2;
   z-index: 0;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .content{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .description{
   width: 80vw;
   margin-top: 100px;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .digits{
@@ -45,14 +59,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .feinman{
   height: 790px;
-  width: 100vw;
+  width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .kaufman{
@@ -60,9 +76,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   position: relative;
   background-color:#1f1f1f;
+  overflow: hidden;
 }
 
 
@@ -70,7 +87,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 350px;
   background-color:#1f1f1f;
 }
@@ -95,7 +112,7 @@
   font-size: 102px;
   font-weight: bold;
   width: 730px;
-  line-hight: 96px;
+  line-height: 96px;
   font-size: 102px;
 }
 
@@ -107,7 +124,7 @@
   width: 388px;
   /*margin: auto;*/
   /*height: 32px;*/
-  width: 388px
+  width: 388px;
   line-hight: 25px;
   font-size: 18px;
 }
@@ -152,7 +169,7 @@
 
 .two-columns__brief{
   width: 175px;
-  line-hight: 1.2;
+  line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
@@ -166,7 +183,7 @@
 }
 
 .two-columns__paragraph{
-  line-hight: 34px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
@@ -174,7 +191,7 @@
 .two-columns__span-accent{
   margin-top: 30px;
   margin-bottom: 30px;
-  line-hight: 34px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
@@ -194,14 +211,14 @@
   margin-top: 100px;
   margin-bottom: 20px;
   text-align: center;
-  line-hight: 69px;
+  line-height: 69px;
   font-size: 60px;
   font-weight: bolder;
 }
 
 .section-subtitle{
   width: 60vw;
-  line-hight: 34px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
@@ -226,14 +243,14 @@
 }
 
 .table__heading{
-  line-hight: 1.15;
+  line-height: 1.15;
   font-size: 24px;
   font-weight: bolder;
   text-align: left;
 }
 
 .table__text{
-  line-hight: 1.2;
+  line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   text-align: left;
@@ -246,7 +263,7 @@
 .feinman__title{
   margin-top: 100px;
   width: 648px;
-  line-hight: 1.15;
+  line-height: 1.15;
   font-size: 120px;
   font-weight: bolder;
   text-align: center;
@@ -257,7 +274,7 @@
 
 .feinman__subtitle{
   margin-top: 70px;
-  line-hight: 51px;
+  line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   text-align: center;
@@ -268,7 +285,7 @@
   position: absolute;
   top: 50%;
   right: 48px;
-  line-hight: 51px;
+  line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   text-align: center;
@@ -302,7 +319,7 @@
   margin-top: 90px;
   margin-bottom: 20px;
   text-align: center;
-  line-hight: 69px;
+  line-height: 69px;
   font-size: 60px;
   font-weight: bolder;
   z-index: 1;
@@ -311,7 +328,7 @@
 .kaufman__section-subtitle{
   width: 60vw;
   margin-top: 0px;
-  line-hight: 34px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
@@ -362,7 +379,7 @@
   flex-direction: column;
   position: relative;
   flex-basis: 711px;
-  line-hight: 25px;
+  line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
@@ -390,7 +407,7 @@
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  line-hight: 30px;
+  line-height: 30px;
   font-size: 18px;
   font-weight: bolder;
 }
@@ -398,7 +415,7 @@
 .column-links{
   line-height: 10px;
   margin-bottom: 20px;
-  line-hight: 30px;
+  line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   color: white;
