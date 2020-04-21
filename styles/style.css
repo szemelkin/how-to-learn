@@ -22,30 +22,19 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  border: 2px solid red;
   z-index: 0;
-
   flex-direction: row;
-  /*height: 95px;*/
-  /*display: flex;*/
-  /*border: 2px solid red;*/
-  /*border: 1px solid red;*/
-  /* выше установили ограничения для секции */
 }
 
 .content{
   display: flex;
   flex-direction: column;
-
   align-items: center;
   width: 100vw;
-
-  border: 2px solid green;
   position: relative;
 }
 
 .description{
-  border: 2px solid red;
   width: 80vw;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -54,12 +43,9 @@
 .digits{
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
   width: 100vw;
-
-  border: 2px solid green;
   position: relative;
 }
 
@@ -67,18 +53,14 @@
   height: 790px;
   width: 100vw;
   position: relative;
-  border: 2px solid blue;
 }
 
 .kaufman{
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
   width: 100vw;
-
-  border: 2px solid green;
   position: relative;
   background-color:#1f1f1f;
 }
@@ -90,7 +72,6 @@
   position: relative;
   width: 100vw;
   min-height: 350px;
-  border: 2px solid red;
   background-color:#1f1f1f;
 }
 
@@ -105,7 +86,6 @@
   left: 64px;
   width: 182px;
   height: 32px;
-  border: 2px solid red; /* граница не влияет на размер */
 }
 
 .header__title{
@@ -115,7 +95,6 @@
   font-size: 102px;
   font-weight: bold;
   width: 730px;
-  border: 2px solid red; /* граница не влияет на размер */
   line-hight: 96px;
   font-size: 102px;
 }
@@ -131,7 +110,6 @@
   width: 388px
   line-hight: 25px;
   font-size: 18px;
-  border: 2px solid red;
 }
 
 .header-link{
@@ -139,11 +117,7 @@
 }
 
 .header__main-illustration{
-
   position: absolute;
-
-  border: 2px solid red;
-
   z-index: 1;
   width: 765px;
   height: 608px;
@@ -173,12 +147,11 @@
   flex-direction: row;
   justify-content: center;
   justify-content: space-between;
-  border: 2px solid red;
+
 }
 
 .two-columns__brief{
   width: 175px;
-  border: 2px solid red;
   line-hight: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -190,11 +163,9 @@
   flex-direction: column;
   width: 80%;
   min-width: 784px;
-  border: 2px solid red;
 }
 
 .two-columns__paragraph{
-  border: 2px solid red;
   line-hight: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -203,7 +174,6 @@
 .two-columns__span-accent{
   margin-top: 30px;
   margin-bottom: 30px;
-  border: 2px solid red;
   line-hight: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -223,17 +193,13 @@
   width: 60vw;
   margin-top: 100px;
   margin-bottom: 20px;
-  border: 2px solid yellow;
   text-align: center;
-
   line-hight: 69px;
   font-size: 60px;
   font-weight: bolder;
 }
 
 .section-subtitle{
-
-  border: 2px solid yellow;
   width: 60vw;
   line-hight: 34px;
   font-size: 24px;
@@ -245,14 +211,12 @@
   display: flex;
   flex-direction: row;
   align-content: flex-start;
-
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   width: 1100px;
   margin-bottom: 100px;
-  border: 2px solid yellow;
   text-align: center;
  }
 
@@ -288,6 +252,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  z-index: 2;
 }
 
 .feinman__subtitle{
@@ -296,6 +261,7 @@
   font-size: 36px;
   font-weight: normal;
   text-align: center;
+  z-index: 2;
 }
 
 .feinman__link{
@@ -306,8 +272,17 @@
   font-size: 36px;
   font-weight: normal;
   text-align: center;
+  z-index: 2;
 }
 
+.feinman__main-illustration{
+  position: absolute;
+  z-index: -1;
+  width: 867px;
+  height: 637px;
+  bottom: 0px;
+  left: 0px;
+}
 
 
 /*Элементы Кауфмана*/
@@ -318,15 +293,15 @@
   right: -210px;
   top: 0px;
   z-index: 3;
+  height: 877px;
+  width: 877px;
 }
 
 .kaufman__section-title{
   width: 60vw;
   margin-top: 90px;
   margin-bottom: 20px;
-  border: 2px solid yellow;
   text-align: center;
-
   line-hight: 69px;
   font-size: 60px;
   font-weight: bolder;
@@ -334,7 +309,6 @@
 }
 
 .kaufman__section-subtitle{
-  border: 2px solid yellow;
   width: 60vw;
   margin-top: 0px;
   line-hight: 34px;
@@ -355,7 +329,6 @@
   width: 1300px;
   margin-top: 0px;
   margin-bottom: 100px;
-  border: 2px solid yellow;
   text-align: center;
   margin-top: 0px;
   z-index: 3;
@@ -368,7 +341,6 @@
   left: 64px;
   width: 182px;
   height: 32px;
-  border: 2px solid red; /* граница не влияет на размер */
 }
 
 /*Footer*/
@@ -377,24 +349,19 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  border: 2px solid red;
   margin-top: 60px;
   margin-bottom: 40px;
-
   width: 90%;
   align-content: space-between;
   justify-content: space-between;
   left: 64px;
-
 }
 
 .columns__copyright{
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
   position: relative;
   flex-basis: 711px;
-
   line-hight: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -410,22 +377,19 @@
   position: absolute;
   bottom: 10px;
   color: white;
-
 }
 
 .columns__info{
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
   color: white;
-
+  z-index: 0;
 }
 
 .column-heading{
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-
   line-hight: 30px;
   font-size: 18px;
   font-weight: bolder;
@@ -433,54 +397,35 @@
 
 .column-links{
   line-height: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   line-hight: 30px;
   font-size: 18px;
   font-weight: normal;
+  color: white;
+  z-index: 2;
+  order: 2;
 }
 
 .columns__social{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: flex-start;
-
+  width: 120px;
+  flex-basis: 150px;
+  height: 200px;
 }
-
-
 
 .content__social{
-  display: inline-block;
+  display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: flex-start;
-  align-content: flex-start;
+  flex-wrap: wrap;
   color: white;
 }
-
 
 .social-icon{
   width: 16px;
   height: 16px;
   margin-right: 10px;
-}
-
-.social-name{
-  line-height: 10px;
-}
-/* Булщит */
-/* Все кнопки будут 100 на 30 пикселей, со скруглёнными углами и надписью заглавными буквами */
-.project-button {
-  width: 200px;
-  height: 260px;
-  border-radius: 4px;
-  text-transform: uppercase;
-}
-/* Кнопка отправки формы будет синего цвета стали с белой надписью */
-.project-button_type_submit {
-  background-color: green;
-  color: black;
+  margin-bottom: 5px;
 }
 
 
-
-}
