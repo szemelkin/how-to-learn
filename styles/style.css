@@ -245,18 +245,17 @@
   overflow: hidden;
   background-color: #f2f2f2;
   z-index: 0;
+  padding-top: 100px;
 
 }
 
 .feinman__title{
-  margin-top: 100px;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bolder;
   text-align: center;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-top: 0px;
   margin-bottom: 70px;
   z-index: 1;
 }
@@ -264,8 +263,7 @@
 .feinman__subtitle{
   line-height: 51px;
   font-size: 36px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0px;
   font-weight: normal;
   text-align: center;
   z-index: 1;
@@ -309,7 +307,7 @@
   margin: 0px auto;
 }
 
-.kaufman__section-title{
+.section-title{
   width: 60%;
   margin-top: 90px;
   margin-bottom: 20px;
@@ -317,69 +315,37 @@
   line-height: 69px;
   font-size: 60px;
   font-weight: bolder;
-  color: white;
 }
 
-.kaufman__section-subtitle{
+.section-subtitle{
   width: 60%;
+  margin-bottom: 0px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
   margin: 0px auto;
-  color: white;
+
 }
 
 
-.section-title__theme_dark {
-  width: 60%;
-  margin-right: 0;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-
-  text-align: center;
+.section-title_theme_dark {
   color: white;
-  line-height: 69px;
-  font-size: 60px;
-  font-weight: bolder;
   z-index: 2;
 }
 
-.section-subtitle__cell_theme_dark{
-  width: 60vw;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  text-align: center;
-
-
+.section-subtitle_theme_dark{
   color: white;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   z-index: 2;
 }
 
 .kaufman__triangle{
-  display: flex;
   position: absolute;
   right: -210px;
   top: 0px;
-
   height: 877px;
   width: 877px;
   background-image: url(../images/kaufman-triangle.svg);
-  z-index: 3;
-}
-
-.section-title__cell{
-  width: 60vw;
-  margin-top: 90px;
-  margin-bottom: 20px;
-  text-align: center;
-  line-height: 69px;
-  font-size: 60px;
-  font-weight: bolder;
   z-index: 3;
 }
 
@@ -465,7 +431,7 @@
 
 }
 
-.footer__column_content_info{
+.footer__column-links{
   display: flex;
   flex-direction: column;
   flex-direction: column;
@@ -489,7 +455,7 @@
   margin-bottom: 0px;
 }
 
-.footer__column-links{
+.footer__column-link{
   left: 0px;
   line-height: 30px;
   font-size: 18px;
@@ -505,7 +471,7 @@
 }
 
 
-.footer__column_content_social{
+.footer__column-socials{
   list-style: none;
   padding: 0px;
   margin-top: 20px;
@@ -516,7 +482,11 @@
 .footer__social{
   left: 0px;
   text-decoration: none;
-
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
   margin-left: 0px; /* Отступ слева */
 }
 
@@ -524,13 +494,6 @@
   height: 16px;
   width: 16px;
   margin-right: 10px;
-  text-decoration: none;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  color: white;
-
-
 }
 
 
