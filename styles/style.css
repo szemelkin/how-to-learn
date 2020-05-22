@@ -149,7 +149,7 @@
   margin-bottom: 30px;
 }
 
-.two-columns__paragraph_last{
+.two-columns__main-text p:last-of-type{
   margin-bottom: 0px;
 }
 
