@@ -1,0 +1,11 @@
+
+.footer__social{
+  left: 0px;
+  text-decoration: none;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  margin-left: 0px; /* Отступ слева */
+}
