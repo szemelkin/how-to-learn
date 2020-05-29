@@ -1,0 +1,8 @@
+.video__ifram{
+  width: 515px;
+  height: 316px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
