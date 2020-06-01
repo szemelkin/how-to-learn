@@ -2,6 +2,13 @@
 
 .cards__item{
   width: 240px;
-  border: 1px red solid;
-  margin-right: 50px;
+  margin-right: 100px;
 }
+
+
+.cards__item:nth-of-type(3) {
+  margin-right: 0px;
+
+  }
+
+

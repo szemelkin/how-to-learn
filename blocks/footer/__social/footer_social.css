@@ -9,3 +9,8 @@
   color: white;
   margin-left: 0px; /* Отступ слева */
 }
+
+.footer__social:hover{
+  opacity: 0.5;
+  transition-duration: 2s;
+}
