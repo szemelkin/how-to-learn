@@ -10,5 +10,5 @@
 
 
 .rotation{
-  animation: rotation 20s ease-in-out infinite;
+  animation: rotation 20s linear infinite;
 }

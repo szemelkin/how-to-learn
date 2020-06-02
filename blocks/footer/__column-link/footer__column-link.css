@@ -7,10 +7,12 @@
   text-decoration: none;
   list-style: none;
   padding: 0px;
+  list-style: none;
 }
 
 
 .footer__column-link:hover{
   opacity: 0.5;
   transition-duration: 2s;
+  list-style: none;
 }
