@@ -6,3 +6,8 @@
   margin-bottom: 217px;
   margin-top: 80px;
 }
+
+.resources__logo-zone:hover{
+  opacity: 0.5;
+  transition-duration: 2s;
+}
