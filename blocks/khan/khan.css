@@ -9,7 +9,7 @@
 @import url(./__buy-link/khan__buy-link.css);
 
 .khan {
-  width: 100vw;
+  width: 100%;
 
   display: -webkit-box;
 
