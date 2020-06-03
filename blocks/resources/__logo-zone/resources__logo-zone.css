@@ -5,9 +5,15 @@
   margin-right: auto;
   margin-bottom: 217px;
   margin-top: 80px;
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 0; /* Убираем поля */
+  list-style: none;
 }
 
-.resources__logo-zone:hover{
-  opacity: 0.5;
-  transition-duration: 2s;
-}
+
